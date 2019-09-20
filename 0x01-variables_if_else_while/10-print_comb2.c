@@ -17,9 +17,6 @@ int main(void)
 		l = 48;
 		while (l <= 57)
 		{
-			/**putchar(n);
-			putchar(l);
-			*/
 			if (n != 57)
 			{
 				putchar(n);
@@ -29,7 +26,7 @@ int main(void)
 			}
 			else
 			{
-				if(l != 57)
+				if (l != 57)
 				{
 					putchar(n);
 					putchar(l);
