@@ -3,48 +3,31 @@
  * main - Accept empty value
  * write - Screen information
  * @void: Description of a empty parameter
- * Description: This is going print us all single digit numbers of base 10
+ * Description: This is going print us all numbers from 0 to 99
  * Return: 0 Value if it works
  */
 int main(void)
 {
 	int n;
-	int l;
+	int m;
 
-	n = 48;
-	while (n <= 57)
+	m = 0;
+	while (m <= 9)
 	{
-		l = 48;
-		while (l <= 57)
+		n = 0;
+		while (n <= 9)
 		{
-			if (n != 57)
+			putchar(m + '0');
+			putchar(n + '0');
+			if (m < 9 || n != 9)
 			{
-				putchar(n);
-				putchar(l);
 				putchar(44);
 				putchar(32);
 			}
-			else
-			{
-				if (l != 57)
-				{
-					putchar(n);
-					putchar(l);
-					putchar(44);
-					putchar(32);
-				}
-				else
-				{
-					putchar(n);
-					putchar(l);
-				}
-			}
-			l++;
+			n++;
 		}
-		n++;
+		m++;
 	}
-	{
-		putchar('\n');
-	}
+	putchar('\n');
 	return (0);
 }
