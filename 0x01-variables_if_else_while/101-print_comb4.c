@@ -25,13 +25,16 @@ int main(void)
 			j = (57 - y);
 			while (j <= 57)
 			{
-				putchar(m);
-				putchar(n);
-				putchar(j);
-				if (m < 55 || n != 56 || j != 57)
+				if (m < n && n < j)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(m);
+					putchar(n);
+					putchar(j);
+					if (m < 55 || n != 56 || j != 57)
+					{
+						putchar(44);
+						putchar(32);
+					}
 				}
 				j++;
 			}
