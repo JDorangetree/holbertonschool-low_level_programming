@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * _islower(int c) -  Determine if a character is lowercase.
+ * _islower -  Determine if a character is lowercase.
  * @c: The evaluated letter
+ *o
  * Description: This prints 1 if character is lowercase
  * Return: 1 Value if it lowercase
  */
