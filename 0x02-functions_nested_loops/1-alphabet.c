@@ -1,11 +1,12 @@
 #include <unistd.h>
 #include "holberton.h"
-
 /**
  * print_alphabet - print the alphabet in lowercase
+ *_putchar - Print characters one by one
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ *@void: Description of a empty parameter
+ * Description: This prints the alphabet
+ * Return: 0 Value if it works
  */
 void print_alphabet(void)
 {
