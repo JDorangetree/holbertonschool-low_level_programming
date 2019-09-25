@@ -17,30 +17,22 @@ void times_table(void)
 			incremento = (filas * columnas);
 			if (incremento == 0 || incremento <= 9)
 			{
-				if (columnas != 9)
+				if (columnas != 0)
 				{
-					_putchar(incremento + '0');
 					_putchar(44);
 					_putchar(32);
 					_putchar(32);
+					_putchar(incremento + '0');
 				}
 				else
 					_putchar(incremento + '0');
 			}
 			else
 			{
-				if (columnas != 9)
-				{
-					_putchar(((incremento) / 10) + '0');
-					_putchar(((incremento) % 10) + '0');
-					_putchar(44);
-					_putchar(32);
-				}
-				else
-				{
-					_putchar(((incremento) / 10) + '0');
-					_putchar(((incremento) % 10) + '0');
-				}
+				_putchar(44);
+				_putchar(32);
+				_putchar(((incremento) / 10) + '0');
+				_putchar(((incremento) % 10) + '0');
 			}
 		}
 		_putchar('\n');
