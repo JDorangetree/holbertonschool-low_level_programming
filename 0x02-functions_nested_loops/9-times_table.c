@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- * times_table -  Print every second and minute of the day.
- * Description: This prints absolute value
- * Return: Value of the last digit
+ * times_table - Prints the 9 times table, starting with 0
+ * @void: The evaluated input
+ *
+ * Description: Prints the 9 times table, starting with 0
+ * Return: 0 Value if it works
  */
 void times_table(void)
 {
