@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * jack_bauer -  Print every second and minute of the day.
+ * add -  adds two integers.
+ *@suma: save the add of the two int
  * Description: This prints absolute value
- * Return: Value of the last digit
+ * Return: return the result
  */
 int add(int x, int y)
 {
