@@ -23,9 +23,7 @@ void times_table(void)
 					_putchar(32);
 				}
 				else
-				{
 					_putchar(incremento + '0');
-				}
 			}
 			else
 			{
