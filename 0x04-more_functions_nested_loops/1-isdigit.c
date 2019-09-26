@@ -5,7 +5,6 @@
  *@c: input parameter
  * Description: checks for a digit
  * Return: 1 Value if is a digit
- * Return: 0 value if is not a digit
  */
 int _isdigit(int c)
 {
