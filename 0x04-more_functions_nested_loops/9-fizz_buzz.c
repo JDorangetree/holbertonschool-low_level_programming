@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - Fizz Buzz
+ * @void: Parameter of times
  *
  * Description: This draws a diagonal line
  * Return: 0 Value if it works
