@@ -14,30 +14,30 @@ int main(void)
 		if ((number % 3) == 0 && (number % 5) != 0)
 		{
 			printf("Fizz");
-			putchar(32);
+			printf(" ");
 		}
 		else
 		{
 			if ((number % 5) == 0 && (number % 3) != 0)
 			{
 				printf("Buzz");
-				putchar(32);
+				printf(" ");
 			}
 			else
 			{
 				if ((number % 5) == 0 && (number % 3) == 0)
 				{
 					printf("FizzBuzz");
-					putchar(32);
+					printf(" ");
 				}
 				else
 				{
 					printf("%d", number);
-					putchar(32);
+					printf(" ");
 				}
 			}
 		}
 	}
-		putchar('\n');
+		printf("\n");
 		return (0);
 }
