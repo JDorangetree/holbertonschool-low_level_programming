@@ -3,7 +3,7 @@
  * main - Fizz Buzz
  * @void: Parameter of times
  *
- * Description: This draws a diagonal line
+ * Description: Print Fizz-Buzz
  * Return: 0 Value if it works
  */
 int main(void)
@@ -39,6 +39,6 @@ int main(void)
 			}
 		}
 	}
-		printf("\n");
-		return (0);
+	printf("\n");
+	return (0);
 }
