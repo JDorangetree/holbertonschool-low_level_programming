@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * swap_int -  multiplies two integers.
- *@a: first int to multiplies
- *@b: secod int to multiplies
- * Description: This multiplies two integers
+ * swap_int -  swap two integers.
+ *@a: first int to swap
+ *@b: secod int to swap
+ * Description: Swap the values of two integers
  * Return: return the result
  */
 void swap_int(int *a, int *b)
