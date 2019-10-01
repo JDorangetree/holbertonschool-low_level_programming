@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *_print_rev -  count length of a string.
+ * print_rev -  count length of a string.
  *@s: string for print
  * Description: print a string in reverse
  * Return: return the result
