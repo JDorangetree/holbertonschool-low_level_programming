@@ -10,7 +10,6 @@ void rev_string(char *s)
 	int i;
 	int n;
 	char reserve;
-	int mitad;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -18,9 +17,8 @@ void rev_string(char *s)
 		i++;
 	}
 	i--;
-	mitad = (i / 2);
 	n = 0;
-	while (i >= mitad)
+	while (n < i)
 	{
 		reserve = s[i];
 		s[i] = s[n];
