@@ -8,7 +8,7 @@
  * Description: Prints n elements of an array
  * Return: n value
  */
-char *_strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
@@ -19,5 +19,5 @@ char *_strcpy(char *dest, char *src);
 		i++;
 	}
 	dest[i] = src[i];
-	printf("\n");
+	return(dest);
 }
