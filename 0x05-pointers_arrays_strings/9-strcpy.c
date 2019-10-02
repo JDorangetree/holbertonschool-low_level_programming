@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _strcpy - Prints elements of an array
  * @dest: The evaluated input
@@ -19,5 +18,5 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	*(dest + i) = '\0';
-	return(dest);
+	return (dest);
 }
