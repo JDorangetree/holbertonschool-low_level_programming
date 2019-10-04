@@ -9,17 +9,17 @@
 
 char *leet(char *p)
 {
-	int n = 0, j;
+	int i = 0, j;
 	char letter[11] = "AEOTLaeotl";
 	char num[11] = "4307143071";
 
-	while (p[n] != '\0')
+	while (p[i] != '\0')
 	{
 		j = 0;
 		while (j < 10)
 		{
-			if (p[n] == letter[j])
-				p[n] = num[j];
+			if (p[i] == letter[j])
+				p[i] = num[j];
 			j++;
 		}
 		i++;
