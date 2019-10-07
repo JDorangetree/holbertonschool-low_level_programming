@@ -20,6 +20,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		i++;
 		dest++;
 	}
-	dest = dest - n;
+	dest -= n;
 	return (dest);
 }
