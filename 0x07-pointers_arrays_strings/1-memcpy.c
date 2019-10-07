@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * _memset - compare two string
- * @b: new valor
- * @n: pisition
- * @s: pointer to buffer
+ * _memcpy - compare two string
+ * @dest: new valor
+ * @src: pisition
+ * @n: pointer to buffer
  *
  * Description: fill memory with a constant byte
  * Return: s
@@ -20,6 +20,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		i++;
 		dest++;
 	}
-	dest = dest - n;
 	return (dest);
 }
