@@ -20,5 +20,6 @@ char *_memset(char *s, char b, unsigned int n)
 		i++;
 		s++;
 	}
+	s = s - n;
 	return (s);
 }
