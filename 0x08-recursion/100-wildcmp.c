@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _divisor - Returns 1 if the input integer is a prime number
+ * wildcmp - Returns 1 if the input integer is a prime number
  * @s1: First input number
  * @s2: Second input divisor
  *
