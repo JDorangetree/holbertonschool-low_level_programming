@@ -8,13 +8,13 @@
  */
 void print_to_98(int n)
 {
-	int contador;
+	int cont;
 
 	if (n < 98)
 	{
-		for (contador = n; contador < 98; contador++)
+		for (cont = n; cont < 98; cont++)
 		{
-			printf("%d, ", contador);
+			printf("%d, ", cont);
 		}
 		printf("98\n");
 	}
@@ -22,9 +22,9 @@ void print_to_98(int n)
 	{
 		if (n > 98)
 		{
-			for (contador = n; contador > 98; contador--)
+			for (cont = n; cont > 98; cont--)
 			{
-				printf("%d, ", contador);
+				printf("%d, ", cont);
 			}
 			printf("98\n");
 		}
