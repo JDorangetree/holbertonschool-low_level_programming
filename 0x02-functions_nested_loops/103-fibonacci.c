@@ -16,13 +16,16 @@ int main(void)
 
 	num_fib = 2;
 	prenum_fib = 1;
-	sum = 3;
+	sum = 2;
 	while (num_fib < 3524578)
 	{
 		src = num_fib;
 		src_sum = sum;
 		num_fib = num_fib + prenum_fib;
-		sum = src_sum + num_fib;
+		if (num_fib % 2 == 0)
+		{
+			sum = src_sum + num_fib;
+		}
 		prenum_fib = src;
 	}
 	printf("%li\n", sum);
