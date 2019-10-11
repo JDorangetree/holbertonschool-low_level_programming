@@ -30,6 +30,6 @@ int main(void)
 		count--;
 	}
 	num_fib = num_fib + prenum_fib;
-	printf("%li", num_fib);
+	printf("%li\n", num_fib);
 	return (0);
 }
