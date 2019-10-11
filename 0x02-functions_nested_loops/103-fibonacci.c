@@ -16,7 +16,7 @@ int main(void)
 
 	num_fib = 2;
 	prenum_fib = 1;
-	sum = 5;
+	sum = 3;
 	while (num_fib < 3524578)
 	{
 		src = num_fib;
