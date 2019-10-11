@@ -14,7 +14,7 @@ int main(void)
 	long int src;
 
 	num_fib = 2;
-	count = 56;
+	count = 48;
 	prenum_fib = 1;
 	while (count > 1)
 	{
