@@ -16,13 +16,9 @@ int main(void)
 
 	num_fib = 2;
 	prenum_fib = 1;
-	sum = 0;
-	while (num_fib <= 3524578)
+	sum = 5;
+	while (num_fib < 3524578)
 	{
-		if (num_fib <= 2)
-		{
-			sum = prenum_fib + num_fib;
-		}
 		src = num_fib;
 		src_sum = sum;
 		num_fib = num_fib + prenum_fib;
