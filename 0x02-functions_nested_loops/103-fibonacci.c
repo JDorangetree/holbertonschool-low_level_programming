@@ -17,7 +17,7 @@ int main(void)
 	num_fib = 2;
 	prenum_fib = 1;
 	sum = 0;
-	while (num_fib <= 2178309)
+	while (num_fib <= 3524578)
 	{
 		if (num_fib <= 2)
 		{
