@@ -23,8 +23,6 @@ char *str_concat(char *s1, char *s2)
 		s1 = null;
 	if (s2 == NULL)
 		s2 = null;
-	if (!s1 || !s2)
-		return (NULL);
 
 	i = 0, j = 0;
 	while (s1[i] != '\0')
@@ -34,6 +32,9 @@ char *str_concat(char *s1, char *s2)
 
 	sum = i + j;
 	str = malloc(sizeof(char) * sum + 1);
+	if (!str)
+		return (NULL);
+
 	count = 0;
 	while (count < i)
 	{
