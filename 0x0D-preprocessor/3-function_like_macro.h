@@ -1,5 +1,5 @@
-#ifndef ABS_H
-#define ABS_H
+#ifndef _3_FUNCTION_LIKE_MACRO_H
+#define _3_FUNCTION_LIKE_MACRO_H
 /**
  * ABS -  Determine the absolute value of an integer.
  * @n: The evaluated number
