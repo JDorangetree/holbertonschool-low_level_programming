@@ -1,44 +1,46 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_strings - allocates memory using
- * @n: total number variable arguments passed.
- * @separator: string to be printed between numbers
+ * print_all - print anything
+ * @format: list of types of argument
  *
- * Description:  prints numbers, followed by a new line.
+ * Description:  prints anything.
  */
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	int j,i;
-	char *s;
-	float f;
-	char c;
+	int j;
+	char *s, *sep;
 
 	va_start(valist, format);
 
-	while(format[j] != '\0' )
+	while (format && format[j] != '\0')
 	{
+		sep = "";
+		if (j >= 0 && format[j + 1] != 0)
+			sep = ", ";
 		switch (format[j])
 		{
 		case 'c':
-			c = (char) va_arg(valist, int);
-			printf("%c", c);
+			printf("%c%s", (char) va_arg(valist, int), sep);
 			break;
 		case 'i':
-			i = va_arg(valist, int);
-			printf("%d", i);
+			printf("%d%s", va_arg(valist, int), sep);
 			break;
 		case 'f':
-			f = va_arg(valist, double);
-			printf("%f", f);
+			printf("%f%s", (float) va_arg(valist, double), sep);
 			break;
 		case 's':
-			s = va_arg(valist, char*);
-			printf("%s", s);
+			s =  va_arg(valist, char *);
+			if (!s)
+				s = "(nil)";
+			printf("%s%s", s, sep);
+			break;
+		default:
 			break;
 		}
 		j++;
 	}
 	va_end(valist);
+	printf("\n");
 }
