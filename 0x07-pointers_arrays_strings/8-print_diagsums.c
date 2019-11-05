@@ -19,7 +19,7 @@ void print_diagsums(int *a, int size)
 		sum_diag1 = sum_diag1 + a[i];
 		i = i + size + 1;
 	}
-	i = 0;
+	i = size - 1;
 	while (i < (size * size) - 1)
 	{
 		sum_diag2 = sum_diag2 + a[i];
