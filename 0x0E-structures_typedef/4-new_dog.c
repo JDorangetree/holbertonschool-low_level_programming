@@ -40,14 +40,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(rex);
 		return (NULL);
 	}
-	for (x = 0; x <= i; x++)
+	for (x = 0; name[x] != '\0'; x++)
 		new_name[x] = name[x];
 	new_name[x] = '\0';
-	for (x = 0; x <= j; x++)
+	for (x = 0; owner[x] != '\0'; x++)
 		new_owner[x] = owner[x];
 	new_owner[x] = '\0';
-	(*rex).name = new_name;
-	(*rex).age = age;
-	(*rex).owner = new_owner;
+	rex->name = new_name;
+	rex->age = age;
+	rex->owner = new_owner;
 	return (rex);
 }
