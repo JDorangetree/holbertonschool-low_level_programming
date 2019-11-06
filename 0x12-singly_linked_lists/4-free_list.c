@@ -19,5 +19,7 @@ void free_list(list_t *head)
 		head = iterator_next->next;
 		free(iterator_next);
 	}
+	free(iterator_next->str);
+	free(iterator_next);
 	free(head);
 }
