@@ -12,6 +12,8 @@ int sum_listint(listint_t *head)
 	listint_t *node_iterator;
 	int sum;
 
+	if (head == NULL)
+		return (0);
 	node_iterator = head;
 	while (head)
 	{
