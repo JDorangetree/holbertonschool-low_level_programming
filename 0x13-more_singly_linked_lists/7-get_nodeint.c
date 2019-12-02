@@ -13,18 +13,21 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *node_iterator;
 	unsigned int count = 0;
 
-	if (!head)
-		return (NULL);
 	node_iterator = head;
 	while (head)
 	{
 		head = head->next;
 		count++;
 	}
-	while (index > 0)
+	if (index <= count)
 	{
-		node_iterator = node_iterator->next;
-		index--;
+		while (index > 0)
+		{
+			node_iterator = node_iterator->next;
+			index--;
+		}
+		return (node_iterator);
 	}
-	return (node_iterator);
+	else
+		return (NULL);
 }
