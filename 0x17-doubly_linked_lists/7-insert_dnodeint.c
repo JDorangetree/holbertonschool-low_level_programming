@@ -12,6 +12,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *tmp, *new_node, *iterator_node;
 	unsigned int i = 0;
 
+	if (!h)
+		return (NULL);
 	new_node = ((dlistint_t *)malloc(sizeof(dlistint_t)));
 	if (new_node == NULL)
 		return (NULL);
