@@ -37,14 +37,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			tmp->prev = new_node;
 			new_node->prev = iterator_node;
 		}
-	} i--;
-	if (idx - i == 1)
-	{
-		while (i > 0)
-			iterator_node = iterator_node->next, i--;
-		iterator_node->next = new_node;
-		new_node->prev = iterator_node;
-		new_node->next = NULL;
 	}
 	else
 		return (NULL);
