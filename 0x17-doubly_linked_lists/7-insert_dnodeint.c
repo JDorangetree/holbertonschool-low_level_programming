@@ -27,13 +27,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		{
 			*h = new_node;
 			new_node->next = iterator_node, iterator_node->prev = new_node;
+			new_node->prev = NULL;
 		}
 		else
 		{
 			while (idx > 1)
 				iterator_node = iterator_node->next, idx--;
-			tmp = iterator_node->next;
-			iterator_node->next = new_node;
+			tmp = iterator_node->next, iterator_node->next = new_node;
 			new_node->next = tmp, tmp->prev = new_node;
 			new_node->prev = iterator_node;
 		}
