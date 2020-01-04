@@ -1,6 +1,3 @@
-[submodule "0x19-Stacks_Queues_LIFO_FIFO/monty"]
-	path = 0x19-Stacks_Queues_LIFO_FIFO/monty
-	url = https://github.com/JDorangetree/monty.git
 [submodule "monty"]
 	path = monty
 	url = https://github.com/JDorangetree/monty.git
