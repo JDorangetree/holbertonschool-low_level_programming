@@ -1,0 +1,3 @@
+[submodule "0x19-stacks_queues_lifo_fifos"]
+	path = 0x19-stacks_queues_lifo_fifos
+	url = https://github.com/JDorangetree/monty.git
