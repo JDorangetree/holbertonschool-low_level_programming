@@ -35,8 +35,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 	{
-		free(copy_value);
-		free(copy_key);
 		return (0);
 	}
 	new_node->value = copy_value;
