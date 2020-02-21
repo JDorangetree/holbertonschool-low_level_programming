@@ -15,8 +15,6 @@ clean:
 oclean: 
 	$(RM) *.o
 
-fclean:
-	clean oclean
+fclean: clean oclean
 
-re:
-	oclean executable
+re: oclean executable
