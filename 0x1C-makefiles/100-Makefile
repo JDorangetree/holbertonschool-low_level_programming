@@ -3,7 +3,7 @@ SRC = main.c holberton.c
 NAME = holberton
 OBJ = $(SRC:.c=.o)
 CFLAGS = -Wall -Werror -Wextra -pedantic
-.PHONY: all clean oclean fclean re
+.PHONY: executable clean oclean fclean re
 
 all: executable
 
