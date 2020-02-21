@@ -6,4 +6,4 @@ OBJ = $(SRC:.o=.c)
 all: executable
 
 executable: $(OBJ)
-	$(CC) -o $(NAME) $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
