@@ -1,0 +1,9 @@
+CC = gcc
+SRC = main.c holberton.c
+NAME = holberton
+OBJ = $(SRC:.o=.c)
+
+all: executable
+
+executable: $(OBJ) m.h
+	$(CC) -o $(NAME) $(OBJ)
