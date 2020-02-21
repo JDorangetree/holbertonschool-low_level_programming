@@ -1,0 +1,22 @@
+CC = gcc
+SRC = main.c holberton.c
+NAME = holberton
+OBJ = $(SRC:.c=.o)
+RM = rm
+
+all: executable
+
+executable: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean: 
+	$(RM) *.o
+
+fclean:
+	clean oclean
+
+re:
+	oclean executable
