@@ -2,7 +2,7 @@ CC = gcc
 SRC = main.c holberton.c
 NAME = holberton
 OBJ = $(SRC:.c=.o)
-RM = rm
+RM = rm -f
 
 all: executable
 
