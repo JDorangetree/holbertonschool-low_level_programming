@@ -5,5 +5,5 @@ OBJ = $(SRC:.o=.c)
 
 all: executable
 
-executable: $(OBJ) m.h
+executable: $(OBJ)
 	$(CC) -o $(NAME) $(OBJ)
