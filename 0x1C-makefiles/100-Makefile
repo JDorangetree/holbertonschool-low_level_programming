@@ -8,8 +8,8 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: m.h executable
 
-all: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+executable: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
