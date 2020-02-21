@@ -6,7 +6,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 .PHONY: executable clean oclean fclean re
 
-all: executable m.h
+all: m.h executable
 
 executable: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
@@ -19,4 +19,4 @@ oclean:
 
 fclean: clean oclean
 
-re: oclean executable
+re: oclean all
