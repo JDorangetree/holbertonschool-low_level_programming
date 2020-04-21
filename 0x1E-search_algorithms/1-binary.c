@@ -12,21 +12,43 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
+	int half_index, pivot, flag = 0;
+	int tmp;
 
-	size_t half;
-    size_t i;
-
-    half = (size - 1 ) / 2;
-    printf("Searching in array: ");
-    while ( i < size -1)
-    {
-        printf("%d, ", array[i]);
-        i++;
-    }
-    printf("%d\n", array[i]);
-    if (array[half] == value)
-    {
-        return (half);
-    }
-    
+	if (size % 2 == 0)
+		half_index = ((int)size / 2) - 1;
+	else
+	{
+		half_index = ((int)size / 2);
+		flag = 1;
+	}
+	pivot = array[half_index];
+	if (pivot == value)
+		return (pivot);
+	if (pivot > value)
+	{
+		if (flag == 0)
+			size = ((int)size / 2) - 1;
+		else
+			size = ((int)size / 2);
+		tmp = binary_search(array, size, value);
+	}
+	if (pivot < value)
+	{
+		if (flag == 1)
+		{
+			size = ((int)size / 2);
+			array = &array[half_index + 1];
+		}
+		else
+		{
+			size = ((int)size / 2);
+			array = &array[half_index + 1];
+		}
+		tmp = binary_search(array, size, value);
+	}
+	if (tmp >= 0)
+		return (tmp);
+	else
+		return (-1);
 }
